@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main_activity"
+    app:startDestination="@id/beginFragment">
+
+    <fragment
+        android:id="@+id/beginFragment"
+        android:name="com.greenlightplanet.casestudy.views.fragments.BeginFragment"
+        android:label="fragment_begin"
+        tools:layout="@layout/fragment_begin" >
+        <action
+            android:id="@+id/action_beginFragment_to_performanceFragment"
+            app:destination="@id/startPerformanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startPerformanceFragment"
+        android:name="com.greenlightplanet.casestudy.views.fragments.StartPerformanceFragment"
+        android:label="fragment_start_performance"
+        tools:layout="@layout/fragment_start_performance" >
+        <action
+            android:id="@+id/action_startPerformanceFragment_to_performanceFragment"
+            app:destination="@id/performanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/performanceFragment"
+        android:name="com.greenlightplanet.casestudy.views.fragments.PerformanceFragment"
+        android:label="fragment_performance"
+        tools:layout="@layout/fragment_performance">
+        <action
+            android:id="@+id/action_performanceFragment_to_areaPerformanceFragment"
+            app:destination="@id/areaPerformanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/areaPerformanceFragment"
+        android:name="com.greenlightplanet.casestudy.views.fragments.AreaPerformanceFragment"
+        android:label="fragment_area_performance"
+        tools:layout="@layout/fragment_area_performance" />
+</navigation>
