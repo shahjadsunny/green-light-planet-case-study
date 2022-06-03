@@ -16,13 +16,13 @@ import java.util.concurrent.TimeUnit
 interface ApiInterface {
 
 
-    //TODO - > get sample performance from server
+    // get sample performance from server
     @GET(GET_SAMPLE_PERFORMANCE)
     suspend fun getPerformanceData(): Response<PerformanceModel>
 
 
 
-    //TODO - > create Ok http
+    // create Ok http
     companion object {
         fun create():ApiInterface{
 

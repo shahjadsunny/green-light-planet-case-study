@@ -16,7 +16,7 @@ class NetworkModule {
 
 
 
-    //TODO - > initialize single Okhttp Instance for entire app
+    // initialize single Okhttp Instance for entire app
     @Singleton
     @Provides
     fun getRetrofitInstance(): ApiInterface {

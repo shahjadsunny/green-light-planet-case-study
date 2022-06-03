@@ -16,7 +16,7 @@ import javax.inject.Singleton
 @Module
 class DatabaseModule {
 
-    //TODO - > initialize single Database Instance for entire app
+    // initialize single Database Instance for entire app
     @Singleton
     @Provides
      fun provideAppDatabase(@ApplicationContext context: Context): AppDatabase {
