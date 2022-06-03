@@ -31,7 +31,6 @@ object ViewType {
 @AndroidEntryPoint
 class PerformanceFragment : Fragment(R.layout.fragment_performance) {
 
-
     private lateinit var layoutManager: LinearLayoutManager
     private lateinit var callback: OnBackPressedCallback
     private val TAG: String? = PerformanceFragment::class.qualifiedName
@@ -109,8 +108,6 @@ class PerformanceFragment : Fragment(R.layout.fragment_performance) {
                 findNavController().navigate(PerformanceFragmentDirections.actionPerformanceFragmentToAreaPerformanceFragment())
             }
         }
-
-
 
         navigateViewCallback()
     }

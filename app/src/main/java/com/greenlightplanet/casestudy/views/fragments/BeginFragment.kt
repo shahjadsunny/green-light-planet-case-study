@@ -19,16 +19,6 @@ class BeginFragment : Fragment(R.layout.fragment_begin) {
 //    private val performanceViewModel: PerformanceViewModel by activityViewModels()
     private val beginViewModel: BeginViewModel by activityViewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.i("Begin", "onCreate: ")
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Log.i("Begin", "onDestroyView: ")
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.i("Begin", "onViewCreated: ")
@@ -40,43 +30,7 @@ class BeginFragment : Fragment(R.layout.fragment_begin) {
     }
 
     private fun getData() {
-
-//        viewLifecycleOwner.lifecycleScope.launch {
-//
-//        }
-//        lifecycleScope.launch {
         beginViewModel.fetchPerformanceData()
-//        }
-
-
-//        viewLifecycleOwner.lifecycleScope.launch {
-//
-//            var i=0
-//            while (true){
-//                delay(1000)
-//                if (i==10)
-//                    break
-//                Log.i("Begin","viewLifecycleOwner.lifecycleScope"+i++)
-//            }
-//        }
-//        lifecycleScope.launch {
-//            var i=0
-//            while (true){
-//                delay(1000)
-//                if (i==10)
-//                    break
-//                Log.i("Begin", "lifecycleScope"+i++)
-//            }
-//        }
-//        lifecycleScope.launchWhenCreated {
-//            var i=0
-//            while (true){
-//                delay(1000)
-//                if (i==10)
-//                    break
-//                Log.i("Begin", "lifecycleScope launchWhenStarted"+i++)
-//            }
-//        }
     }
 
     private fun listeners() {
@@ -92,20 +46,5 @@ class BeginFragment : Fragment(R.layout.fragment_begin) {
         super.onDestroy()
     }
 
-    override fun onResume() {
-        super.onResume()
-        Log.i("Begin", "onResume: ")
-    }
 
-    override fun onPause() {
-        super.onPause()
-        Log.i("Begin", "onPause: ")
-
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.i("Begin", "onStop: ")
-
-    }
 }

@@ -62,12 +62,16 @@
         android:padding="1dp"
         >
         <LinearLayout
+            android:background="@drawable/header_ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
             android:id="@+id/linearLayoutViewAscDesc"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
                 android:padding="10dp"
@@ -83,8 +87,8 @@
                 />
             <ImageView
                 android:id="@+id/ascDescImgView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_arrow_upward_24"/>
         </LinearLayout>
 
